@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+
+      <div class="title">
+        <p>Check Your <span class="hijau">BMI</span></p>
+      </div>
+
+      <div class="sub-title">
+        <p>
+          Enter your <span class="hijau">weight</span> and
+          <span class="hijau">height</span> below to check your BMI results
+        </p>
+      </div>
+
+       <form action="" id="form-BMI">
+        <div class="data">
+          <div class="height">
+            <label for="height" name="height" id="height"
+              >Put your <span class="hijau">height</span> in here (cm)</label
+            >
+            <input type="number" name="height" class="input" id="input-height" />
+          </div>
+
+          <div class="weight">
+            <label for="weight" name="weight" id="weight"
+              >Put your <span class="hijau">weight</span> in here (kg)</label
+            >
+            <input type="number" name="weight" class="input" id="input-weight" />
+          </div>
+        </div>
+
+        <button id="btn" >Calculate BMI</button>
+
+        <p id="summary">
+          Your BMI is <span id="bmi" class=" hijau"></span>, which means
+          <span id="categories" class="hijau"></span>
+        </p>
+      </form>
+     
+     
+    </div> 
+
+
+    
+    <script src="index.js"></script>
+  </body>
+</html>
